@@ -1,2 +1,4 @@
-*.pdf
 *.txt
+
+# ignore assets/related-doc
+/assets/related-doc/*.pdf
