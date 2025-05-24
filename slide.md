@@ -80,37 +80,22 @@ marp: true
 
 ---
 
-## **Ma trận chức năng theo vai trò**
-<style scoped>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-</style>
-| Chức năng        | Bệnh nhân | Bác sĩ |
-| ---------------- | :-------: | :----: |
-| ĐK/SMS           |     ✓     |    ✗   |
-| Quản lý vai trò  |     ✓     |    ✗   |
-| Hồ sơ cá nhân    |     ✓     |    ✓   |
-| Đặt/đổi lịch     |     ✓     |    ✓   |
-| Chọn loại cuộc hẹn|     ✓     |    ✓   |
-| Tư vấn (video/âm thanh/chat)|     ✓     |    ✓   |
+## **Phân tích cạnh tranh**
+
+- Đã khảo sát các ứng dụng: Long Châu, Pharmacity, eDoctor, UMC Care
+- **Điểm mạnh đối thủ**: 
+  - Long Châu: tư vấn dược/bán thuốc
+  - Pharmacity: công cụ theo dõi sức khỏe
+  - eDoctor: khám/xét nghiệm tại nhà
+  - UMC Care: liên kết với bệnh viện uy tín
 
 ---
-<style scoped>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-</style>
-
-| Chức năng        | Bệnh nhân | Bác sĩ |
-| ---------------- | :-------: | :----: |
-| Tìm bác sĩ & UW   |     ✓     |    ✗   |
-| Hồ sơ điện tử (EHR)|     ✓     |    ✓   |
-| Kê đơn điện tử|     ✗     |    ✓   |
-| Đăng tải bài viết sức khỏe|     ✗     |    ✓   |
-| Đăng tải bài viết sức khỏe|     ✗     |    ✓   |
+### Cơ hội cạnh tranh
+- Thiếu tích hợp sâu với hệ thống bệnh viện lớn
+- Thiếu tính năng khám chữa bệnh chuyên sâu
+- Giới hạn về phạm vi dịch vụ
+- Giao diện phức tạp với người lớn tuổi
+- Một số ứng dụng chưa có quản lý hồ sơ gia đình
 
 ---
 
@@ -173,22 +158,37 @@ marp: true
 
 ---
 
-## **Phân tích cạnh tranh**
-
-- Đã khảo sát các ứng dụng: Long Châu, Pharmacity, eDoctor, UMC Care
-- **Điểm mạnh đối thủ**: 
-  - Long Châu: tư vấn dược/bán thuốc
-  - Pharmacity: công cụ theo dõi sức khỏe
-  - eDoctor: khám/xét nghiệm tại nhà
-  - UMC Care: liên kết với bệnh viện uy tín
+## **Ma trận chức năng theo vai trò**
+<style scoped>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+</style>
+| Chức năng        | Bệnh nhân | Bác sĩ |
+| ---------------- | :-------: | :----: |
+| ĐK/SMS           |     ✓     |    ✗   |
+| Quản lý vai trò  |     ✓     |    ✗   |
+| Hồ sơ cá nhân    |     ✓     |    ✓   |
+| Đặt/đổi lịch     |     ✓     |    ✓   |
+| Chọn loại cuộc hẹn|     ✓     |    ✓   |
+| Tư vấn (video/âm thanh/chat)|     ✓     |    ✓   |
 
 ---
-### Cơ hội cạnh tranh
-- Thiếu tích hợp sâu với hệ thống bệnh viện lớn
-- Thiếu tính năng khám chữa bệnh chuyên sâu
-- Giới hạn về phạm vi dịch vụ
-- Giao diện phức tạp với người lớn tuổi
-- Một số ứng dụng chưa có quản lý hồ sơ gia đình
+<style scoped>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+</style>
+
+| Chức năng        | Bệnh nhân | Bác sĩ |
+| ---------------- | :-------: | :----: |
+| Tìm bác sĩ & UW   |     ✓     |    ✗   |
+| Hồ sơ điện tử (EHR)|     ✓     |    ✓   |
+| Kê đơn điện tử|     ✗     |    ✓   |
+| Đăng tải bài viết sức khỏe|     ✗     |    ✓   |
+| Đăng tải bài viết sức khỏe|     ✗     |    ✓   |
 
 ---
 
