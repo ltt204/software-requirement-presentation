@@ -64,9 +64,6 @@ marp: true
 - **Bác sĩ**
   - Có bằng y khoa, chứng chỉ hành nghề
   - Kiến thức kỹ thuật trung bình
-- **Điều dưỡng**
-  - Có bằng/chứng chỉ điều dưỡng
-  - Kiến thức kỹ thuật trung bình
 
 ---
 
@@ -92,7 +89,7 @@ marp: true
 ---
 ### Cơ hội cạnh tranh
 - Thiếu tích hợp sâu với hệ thống bệnh viện lớn
-- Thiếu tính năng khám chữa bệnh chuyên sâu
+- Thiếu tính tư vấn năng khám chữa bệnh chuyên sâu
 - Giới hạn về phạm vi dịch vụ
 - Giao diện phức tạp với người lớn tuổi
 - Một số ứng dụng chưa có quản lý hồ sơ gia đình
@@ -101,11 +98,11 @@ marp: true
 
 ## **Yêu cầu phi chức năng** 
 ### Hiệu năng (Performance)
-- Thời gian phản hồi cho tương tác người dùng dưới 2 giây.  
-- Thời gian phản hồi cho đặt lịch hẹn dưới 5 giây.  
+- Thời gian phản hồi cho tương tác người dùng dưới 2 giây 
+- Thời gian phản hồi cho đặt lịch hẹn dưới 5 giây
 
 ### Tính mở rộng (Scalability)
-- Hỗ trợ mở rộng theo chiều ngang để thích ứng với sự tăng trưởng.  
+- Hỗ trợ mở rộng theo chiều ngang để thích ứng với sự tăng trưởng
 
 ---
 
@@ -158,21 +155,36 @@ marp: true
 
 ---
 
-## **Ma trận chức năng theo vai trò**
+## **Functional Scope**
+
+- Tổng số Use Case: **26**  
+- Đối tượng: Bệnh nhân, Chuyên gia y tế, Quản trị viên  
+- Mỗi Use Case gồm:  
+  - Tên & Mã (UC-1…UC-26)  
+  - Mô tả chi tiết  
+  - Actor tham gia  
+  - Điều kiện tiên quyết  
+  - Luồng chính & luồng thay thế 
+  
+---
+
 <style scoped>
   table {
     width: 100%;
     border-collapse: collapse;
   }
 </style>
-| Chức năng        | Bệnh nhân | Bác sĩ |
-| ---------------- | :-------: | :----: |
-| ĐK/SMS           |     ✓     |    ✗   |
-| Quản lý vai trò  |     ✓     |    ✗   |
-| Hồ sơ cá nhân    |     ✓     |    ✓   |
-| Đặt/đổi lịch     |     ✓     |    ✓   |
-| Chọn loại cuộc hẹn|     ✓     |    ✓   |
-| Tư vấn (video/âm thanh/chat)|     ✓     |    ✓   |
+### Các Use Case cho **Bệnh nhân** & **Chuyên gia**
+
+| Mã  | Tên Use Case                          | Actor          |
+|-----|---------------------------------------|----------------|
+| UC-1  | Đăng ký tài khoản bệnh nhân          | Bệnh nhân      |
+| UC-2  | Đăng nhập tài khoản                  | Bệnh nhân      |
+| UC-3  | Đặt lịch hẹn tư vấn từ xa             | Bệnh nhân      |
+| UC-4  | Cập nhật hồ sơ sức khỏe               | Bệnh nhân      |
+| UC-5  | Quản lý thông tin bảo hiểm            | Bệnh nhân      |
+| UC-6  | Quản lý thuốc & lịch uống thuốc       | Bệnh nhân      |
+| UC-7  | Theo dõi sức khỏe                     | Bệnh nhân      |
 
 ---
 <style scoped>
@@ -181,15 +193,17 @@ marp: true
     border-collapse: collapse;
   }
 </style>
+### Use Case cho **Chuyên gia y tế** & **Quản trị viên**
 
-| Chức năng        | Bệnh nhân | Bác sĩ |
-| ---------------- | :-------: | :----: |
-| Tìm bác sĩ & UW   |     ✓     |    ✗   |
-| Hồ sơ điện tử (EHR)|     ✓     |    ✓   |
-| Kê đơn điện tử|     ✗     |    ✓   |
-| Đăng tải bài viết sức khỏe|     ✗     |    ✓   |
-| Đăng tải bài viết sức khỏe|     ✗     |    ✓   |
+| Mã   | Tên Use Case                                | Actor             |
+|------|---------------------------------------------|-------------------|
+| UC-14  | Thanh toán dịch vụ y tế                     | Bệnh nhân         |
+| UC-15  | Xem lịch sử thanh toán                      | Bệnh nhân         |
+| UC-17  | Xem lịch hẹn sắp tới (chuyên gia)           | Chuyên gia y tế   |
+| UC-24  | Quản lý vai trò & quyền truy cập            | Quản trị viên     |
+| UC-25  | Quản lý giá dịch vụ                         | Quản trị viên     |
 
+* Lưu ý: Chi tiết **Usecase Requirements** đã được tổng hợp trong SRS.
 ---
 
 <style scoped>
