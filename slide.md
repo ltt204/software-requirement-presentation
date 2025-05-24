@@ -95,6 +95,23 @@ marp: true
 - Một số ứng dụng chưa có quản lý hồ sơ gia đình
 
 ---
+<style scoped>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+</style>
+## **Yêu cầu phi chức năng** 
+
+| Loại yêu cầu               | Số lượng | 
+| -------------------------- | :------: | 
+| Hiệu năng (Performance)    | 2        |
+| Tính mở rộng (Scalability) | 1        |
+| Bảo mật (Security)         | 9        |
+| Usability                  | 5        |
+| Accessibility              | 4        |
+
+---
 
 ## **Yêu cầu phi chức năng** 
 ### Hiệu năng (Performance)
