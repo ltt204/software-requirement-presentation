@@ -2,7 +2,7 @@
 theme: gaia
 _class: lead
 paginate: true
-backgroundImage: url('./assets/images/pxfuel.jpg')
+backgroundImage: url('../assets/images/pxfuel.jpg')
 style: |
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
   section {
@@ -12,6 +12,7 @@ marp: true
 ---
 
 # **Ứng dụng di động Y tế**  
+## **Medisync**
 
 ---
 
