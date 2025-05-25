@@ -115,12 +115,12 @@ marp: true
 ## **2. Tính năng ưu tiên:**
 |Vai trò|Tính năng ưu tiên|
 |---|---|
-|Bác sĩ| - Hồ sơ bệnh án điện tử<br>- Kê đơn điện tử & giao thuốc <br>- Hỗ trợ kiểm tra tương tác thuốc <br>- Đánh giá tình trạng khẩn cấp. <br> - AI hỗ trợ chẩn đoán/ghi chép.|
-|Điều dưỡng & Bệnh nhân| - Theo dõi sức khỏe từ xa  <br>- Đặt lịch khám từ xa <br>- Nhắc nhở tự động (tái khám, tiêm chủng, thuốc) <br>- Quản lý hồ sơ sức khỏe gia đình<br>- Tự động hóa hồ sơ|
+|Bác sĩ| - Hồ sơ bệnh án điện tử<br>- Kê đơn điện tử & giao thuốc <br>- Hỗ trợ kiểm tra tương tác thuốc <br>- Đánh giá tình trạng khẩn cấp. <br> - AI hỗ trợ ghi chép|
+|Bệnh nhân| - Theo dõi sức khỏe từ xa  <br>- Đặt lịch khám từ xa <br>- Nhắc nhở tự động (tái khám, tiêm chủng, thuốc) <br>- Quản lý hồ sơ sức khỏe gia đình<br>- Tự động hóa hồ sơ|
 ---
 
 ## **3. Yêu cầu tích hợp:**
-- Hệ thống EMR/EHR
+- Hệ thống Bệnh án điện tử (EHR)
 - Nhà thuốc/Đơn vị Dược
 - Cơ sở dữ liệu Thuốc
 - Hệ thống Bảo hiểm Y tế (tiềm năng)
@@ -140,7 +140,7 @@ marp: true
 ## **5. Rào cản triển khai:**
 
 - Quy trình làm việc hiện tại (giấy & điện tử)
-- Hạn chế công nghệ (khám thực thể, AI, hướng dẫn cấp cứu)
+- Hạn chế công nghệ (khám lâm sàng, AI, hướng dẫn cấp cứu)
 - Vấn đề kỹ thuật (trục trặc, lỗi, quá tải)
 - Sự chấp nhận của người dùng
 
@@ -154,7 +154,7 @@ marp: true
     - **Scalability**: 4 yêu cầu
     - **Security**: 6 yêu cầu
     - **Usability**: 4 yêu cầu
-    - **Accessibility**: 0 yêu cầu
+    - **Accessibility**: 3 yêu cầu
 ---
 
 ## **IV. Đặc tả yêu cầu phần mềm (SRS)**
@@ -165,6 +165,7 @@ marp: true
 
 ---
 
+---
 ## **V. Phân tích đối thủ cạnh tranh (Competition Analysis)**
 
 - Đã khảo sát các ứng dụng: Long Châu, Pharmacity, eDoctor, UMC Care
@@ -216,7 +217,7 @@ marp: true
 - **Mục đích:** Mô tả luồng hoạt động chính của hệ thống
 
 |Activity|Mô tả|Kí hiệu|
-|---|---|---|
+|---|---|:---:|
 |Bệnh nhân gửi yêu cầu tư vấn|Bệnh nhân gửi yêu cầu tư vấn từ xa qua ứng dụng|**A-1**|
 |Hệ thống xử lý và thông báo bác sĩ|Hệ thống nhận yêu cầu và thông báo bác sĩ có mặt|**A-2**|
 |Chế độ tư vấn video/chat|Bác sĩ và bệnh nhân tham gia tư vấn qua video hoặc chat|**A-3**|
@@ -253,7 +254,7 @@ marp: true
 **Các Use Case chính:**
 
 | Use Case | Tên Use Case                           | Actor                                     |Activity|
-|----------|----------------------------------------|-------------------------------------------|---|
+|----------|----------------------------------------|-------------------------------------------|:---:|
 | **UC-3**     | Đặt lịch hẹn tư vấn từ xa              | Bệnh nhân (Chính), Hệ thống               |**A-1**|
 | **UC-6**     | Quản lý   thuốc và lịch uống thuốc       | Bệnh nhân                                 |**A-5**|
 | **UC-9**     | Nhận thông báo lịch hẹn                | Bệnh nhân (Thụ động), Hệ thống            |**A-5**|
