@@ -248,7 +248,7 @@ marp: true
 | **UC-3**     | Đặt lịch hẹn tư vấn từ xa              | Bệnh nhân (Chính), Hệ thống               |**A-1**|
 | **UC-6**     | Quản lý   thuốc và lịch uống thuốc       | Bệnh nhân                                 |**A-5**|
 | **UC-9**     | Nhận thông báo lịch hẹn                | Bệnh nhân (Thụ động), Hệ thống            |**A-5**|
-| **UC-11**    | Tham gia tư vấn từ xa                  | Bệnh nhân, Bác sĩ, Hệ thống               |**A-3**|
+| **UC-11**    | Tham gia tư vấn từ xa                  | Bệnh nhân, Chuyên gia y tế, Hệ thống               |**A-3**|
 | **UC-12**    | Gửi tin nhắn bảo mật để hỏi về y tế     | Bệnh nhân, Chuyên gia y tế (Phụ), Hệ thống |**A-3**|
 | **UC-18**    | Nhận thông báo về các cuộc hẹn mới      | Chuyên gia y tế (Thụ động), Hệ thống       |**A-2**|
 | **UC-20**    | Ghi chẩn đoán và kê đơn                | Chuyên gia y tế, Hệ thống                 |**A-4**|
@@ -257,7 +257,16 @@ marp: true
 
 ---
 
-> *NBVT - Minh họa Use Case Diagram chung và các sơ đồ phụ*  
+<style scoped>
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+![width:1100px](../assets/images/diagrams/UseCase.png)
 
 ---
 
