@@ -205,7 +205,9 @@ marp: true
 5. Nhắc nhở lịch tái khám/thuốc
 ``` 
 ---
-<!-- NBVT - Chèn hình ảnh activity diagram -->
+
+![width:100%](../assets/images/diagrams/Activity.png)
+
 * Lưu ý: *Bản đầy đủ xem chi tiết trong sơ đồ luồng `ActivityDiagram.pdf` và `ActivityDiagram.drawio`*
 
 ---
