@@ -192,21 +192,39 @@ marp: true
 
 ### Mô hình hóa hệ thông Medisync
 ---
+<style scoped>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
 
+  td, th {
+    font-size: 25px;
+  }
+</style>
 ## **Activity Diagram**
 
 - **Mục đích:** Mô tả luồng hoạt động chính của hệ thống
 
-```plaintext
-1. Bệnh nhân gửi yêu cầu tư vấn từ xa
-2. Hệ thống xử lý và thông báo bác sĩ
-3. Chế độ tư vấn video/chat
-4. Kê đơn & kiểm tra tương tác thuốc
-5. Nhắc nhở lịch tái khám/thuốc
-``` 
+|Activity|Mô tả|Kí hiệu|
+|---|---|---|
+|Bệnh nhân gửi yêu cầu tư vấn|Bệnh nhân gửi yêu cầu tư vấn từ xa qua ứng dụng|**A-1**|
+|Hệ thống xử lý và thông báo bác sĩ|Hệ thống nhận yêu cầu và thông báo bác sĩ có mặt|**A-2**|
+|Chế độ tư vấn video/chat|Bác sĩ và bệnh nhân tham gia tư vấn qua video hoặc chat|**A-3**|
+|Kê đơn & kiểm tra tương tác thuốc|Bác sĩ kê đơn thuốc và hệ thống kiểm tra tương tác thuốc|**A-4**|
+|Nhắc nhở lịch tái khám/thuốc|Hệ thống gửi nhắc nhở lịch tái khám và uống thuốc|**A-5**|
 ---
 
-![width:100%](../assets/images/diagrams/Activity.png)
+<style scoped>
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+![width:840px](../assets/images/diagrams/Activity.png)
 
 * Lưu ý: *Bản đầy đủ xem chi tiết trong sơ đồ luồng `ActivityDiagram.pdf` và `ActivityDiagram.drawio`*
 
@@ -216,18 +234,26 @@ marp: true
     width: 100%;
     border-collapse: collapse;
   }
+
+  td, th {
+    font-size: 20px;
+  }
 </style>
 ## **Use Case Diagrams**
 
 **Các Use Case chính:**
-| Use Case | Actor | Mô tả |
-|---|---|---|
-| **UC-3** | Bệnh nhân/Bác sĩ | Tìm kiếm bác sĩ, xem lịch làm việc |
-| **UC-10** | Bệnh nhân | Xem hồ sơ y tế điện tử |
-| **UC-11** | Bệnh nhân/Bác sĩ | Tham gia tư vấn từ xa |
-| **UC-14** | Bệnh nhân | Thanh toán dịch vụ y tế |
-| **UC-18** | Bác sĩ | Nhận thông báo cuộc hẹn mới |
-| **UC-20** | Bác sĩ | Ghi chẩn đoán và kê đơn |
+
+| Use Case | Tên Use Case                           | Actor                                     |Activity|
+|----------|----------------------------------------|-------------------------------------------|---|
+| **UC-3**     | Đặt lịch hẹn tư vấn từ xa              | Bệnh nhân (Chính), Hệ thống               |**A-1**|
+| **UC-6**     | Quản lý   thuốc và lịch uống thuốc       | Bệnh nhân                                 |**A-5**|
+| **UC-9**     | Nhận thông báo lịch hẹn                | Bệnh nhân (Thụ động), Hệ thống            |**A-5**|
+| **UC-11**    | Tham gia tư vấn từ xa                  | Bệnh nhân, Bác sĩ, Hệ thống               |**A-3**|
+| **UC-12**    | Gửi tin nhắn bảo mật để hỏi về y tế     | Bệnh nhân, Chuyên gia y tế (Phụ), Hệ thống |**A-3**|
+| **UC-18**    | Nhận thông báo về các cuộc hẹn mới      | Chuyên gia y tế (Thụ động), Hệ thống       |**A-2**|
+| **UC-20**    | Ghi chẩn đoán và kê đơn                | Chuyên gia y tế, Hệ thống                 |**A-4**|
+| **UC-22**    | Thực hiện tư vấn từ xa (Chuyên gia y tế)| Chuyên gia y tế, Bệnh nhân (Phụ), Hệ thống |**A-3**|
+| **UC-23**    | Trả lời tin nhắn bảo mật từ bệnh nhân  | Chuyên gia y tế, Hệ thống                 |**A-3**|
 
 ---
 
@@ -256,7 +282,7 @@ Lưu ý: *Chi tiết prototype đã có trong đường dẫn Figma đính kèm 
 
 |||||
 |:---:|:---:|:---:|:---:|
-| ![width:200px](../assets/images/prototype/Flow5-01.png) | ![width:200px](../assets/images/prototype/Flow5-02.png) |![width:200px](../assets/images/prototype/Flow5-03.png)|![width:200px](../assets/images/prototype/Flow5-04.png)|
+| ![width:240px](../assets/images/prototype/Flow05-01.png) | ![width:240px](../assets/images/prototype/Flow05-02.png) |![width:240px](../assets/images/prototype/Flow05-03.png)|![width:240px](../assets/images/prototype/Flow05-04.png)|
 --- 
 <style scoped>
   table {
@@ -273,7 +299,7 @@ Lưu ý: *Chi tiết prototype đã có trong đường dẫn Figma đính kèm 
 ### **Flow-06: Care Chat**
 ||||
 |:---:|:---:|:---:|
-| ![width:200px](../assets/images/prototype/Flow06-01.png) | ![width:200px](../assets/images/prototype/Flow06-02.png) |![width:200px](../assets/images/prototype/Flow06-03.png)|
+| ![width:240px](../assets/images/prototype/Flow06-01.png) | ![width:240px](../assets/images/prototype/Flow06-02.png) |![width:240px](../assets/images/prototype/Flow06-03.png)|
 --- 
 
 ## **Kết luận** 
