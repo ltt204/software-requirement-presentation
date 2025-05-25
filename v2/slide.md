@@ -266,7 +266,8 @@ marp: true
   }
 </style>
 
-![width:1100px](../assets/images/diagrams/UseCase.png)
+![width:1000px](../assets/images/diagrams/UseCase.png)
+* Lưu ý: *Bản đầy đủ xem chi tiết trong sơ đồ luồng `UseCaseSpecification.pdf` và `UseCaseDiagram.drawio`*
 
 ---
 
