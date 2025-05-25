@@ -148,12 +148,21 @@ marp: true
 
 ## **IV. Đặc tả yêu cầu phần mềm (SRS)**
 - Tổng số yêu cầu về:
-  - **Tính năng**: 8 yêu cầu
-  - **Tính khả dụng**: 3 yêu cầu
-  - **Độ tin cậy**: 3 yêu cầu
-  - **Hiệu suất**: 3 yêu cầu
-  - **Khả năng hỗ trợ kỹ thuật**: 2 yêu cầu
-- Lưu ý: Các yêu cầu này đã được mô tả chi tiết trong tài liệu `SoftwareRequirementsSpecification.pdf`
+  - **Chức năng**: 39 yêu cầu
+  - **Phi chức năng**: 31 yêu cầu
+    - **Performance**: 4 yêu cầu
+    - **Scalability**: 4 yêu cầu
+    - **Security**: 6 yêu cầu
+    - **Usability**: 4 yêu cầu
+    - **Accessibility**: 0 yêu cầu
+---
+
+## **IV. Đặc tả yêu cầu phần mềm (SRS)**
+- Lưu ý: 
+  - Một số NFR có thể liên quan đến nhiều hơn một danh mục (ví dụ: **NFR-10**, **NFR-11**, **NFR-14**). 
+  - Việc phân loại này dựa trên khía cạnh nổi bật nhất của mỗi NFR
+  - Các yêu cầu này đã được mô tả chi tiết trong tài liệu `RequirementTraceabilityMatrix.pdf` và `SoftwareRequirementsSpecification.pdf`
+
 ---
 
 ## **V. Phân tích đối thủ cạnh tranh (Competition Analysis)**
@@ -310,13 +319,3 @@ Lưu ý: *Chi tiết prototype đã có trong đường dẫn Figma đính kèm 
 ||||
 |:---:|:---:|:---:|
 | ![width:240px](../assets/images/prototype/Flow06-01.png) | ![width:240px](../assets/images/prototype/Flow06-02.png) |![width:240px](../assets/images/prototype/Flow06-03.png)|
---- 
-
-## **Kết luận** 
-- Cần ứng dụng hỗ trợ quy trình làm việc của bác sĩ và điều dưỡng
-- Cung cấp tính năng tiện lợi cho bệnh nhân
-- Tích hợp chặt chẽ với các hệ thống y tế hiện có
-- Chú trọng tính chính xác, an toàn, bảo mật dữ liệu
-- Nhận thức và giải quyết các hạn chế của công nghệ
-
-
